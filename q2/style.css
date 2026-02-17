@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+}
+  
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}

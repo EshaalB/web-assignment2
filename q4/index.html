@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Layout Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="theme-link" rel="stylesheet" href="style_grid.css">
+
+</head>
+
+<body>
+
+    <h1>Product Dashboard</h1>
+
+    <div class="switcher">
+        <button onclick="switchLayout('style_float.css', 'Float')">Float</button>
+        <button onclick="switchLayout('style_flex.css', 'Flexbox')">Flexbox</button>
+        <button onclick="switchLayout('style_grid.css', 'Grid')">Grid</button>
+    </div>
+    <p class="active-label">Active Layout: <span id="current-layout">Grid</span></p>
+
+    <div class="container">
+        <div class="card">Product 1</div>
+        <div class="card">Product 2</div>
+        <div class="card">Product 3</div>
+        <div class="card">Product 4</div>
+    </div>
+
+    <script>
+        function switchLayout(file, name) {
+            document.getElementById('theme-link').href = file;
+            document.getElementById('current-layout').innerText = name;
+        }
+    </script>
+
+</body>
+
+</html>
